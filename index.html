@@ -5,8 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PitBull's Drinks</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          listStyleImage: {
+            checked: 'url("src/img/icons/Checkmark.svg")'
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body class="bg-black">
@@ -26,11 +37,138 @@
         </h2>
       </div>
     </div>
-    
-    <button class="absolute right-6 bottom-6 border text-white w-12 h-12 md:right-10 md:bottom-10">
-     
-    </button>
+
+    <a href="#planos" class="absolute right-6 bottom-6 border text-white w-12 h-12 md:right-10 md:bottom-10">
+    </a>
   </header>
+
+  <main id="planos" class=" px-4 xl:px-24 text-white pt-8">
+
+    <div class="text-center ">
+      <h3 class="text-4xl">
+        Confira nossos planos
+      </h3>
+      <p class="my-12">
+        Com mais de 7 anos de experiência trabalhando em diversos eventos em Brasília e Entorno, <br />
+        nós do Pitbull's Drinks temos a receita perfeita para deixar seu evento sofisticado e exclusivo.
+      </p>
+    </div>
+
+    <section class="flex justify-around flex-wrap gap-5 h-screen">
+
+      <div class="border border-green-700 rounded  w-full sm:w-[300px] p-3 sm:p-6">
+        <p>
+        <div class="text-center neonText">Pacote Clássico</div>
+        <div class="text-center ml-2 text-sm text-slate-600">4 horas de evento</div>
+        </p>
+        <ul class="list-image-checked pl-2 pt-6 marker:text-2xl ">
+          <li>
+            Caipirinha
+            <p class="text-sm">cachaça + limão + açucar + gelo</p>
+          </li>
+          <li>
+            Caipiroska
+            <p class="text-sm">Abacaxi ou Maracujá ou Limão + Vodka + hortelã + açucar + gelo.<oup>
+          </li>
+          <li>
+            Mojito de morango
+            <p class="text-sm">Rum + morango + hortelã + açucar + água com gás + gelo.</p>
+          </li>
+        </ul>
+        <p class="text-sm mt-6 text-slate-600"> Vodka Smirnoff.</p>
+      </div>
+
+      <div class="border border-green-700 rounded  w-full sm:w-[300px] p-3 sm:p-6">
+        <p>
+        <div class="text-center neonText">Pacote Silver</div>
+        <div class="text-center ml-2 text-sm text-slate-600">4 horas de evento</div>
+        </p>
+        <ul class="list-image-checked pl-2 pt-6 marker:text-2xl ">
+          <li>
+            Caipiroska
+            <p class="text-sm">Abacaxi ou Maracujá ou Limão + Vodka + hortelã + açucar + gelo.<oup>
+          </li>
+          <li>
+            Gin Tropical
+            <p class="text-sm">Gin + energético tropical + laranja bahia + especiarias + gelo.</p>
+          </li>
+          <li>
+            Red Lemon (exclusivo)
+            <p class="text-sm">Vodka + morango + suco de limão + açúcar + gelo.</p>
+          </li>
+          <li>
+            Pina Colada
+            <p class="text-sm">Rum + leite condensado + leite de coco + abacaxi + gelo.</p>
+          </li>
+        </ul>
+        <p class="text-sm mt-6 text-slate-600"> Vodka Smirnoff + Gin Seagers.</p>
+      </div>
+
+
+      <div class="border border-green-700 rounded  w-full sm:w-[300px] p-3 sm:p-6">
+        <p>
+        <div class="text-center neonText">Pacote Gold</div>
+        <div class="text-center ml-2 text-sm text-slate-600">4 horas de evento</div>
+        </p>
+        <ul class="list-image-checked pl-2 pt-6 marker:text-2xl ">
+          <li>
+            Caipirinha
+            <p class="text-sm">cachaça + limão + açucar + gelo</p>
+          </li>
+          <li>
+            Caipiroska
+            <p class="text-sm">Abacaxi ou Maracujá ou Limão + Vodka + hortelã + açucar + gelo.
+            <p>
+          </li>
+          <li>
+            Coquetel de frutas
+            <p class="text-sm">Morango ou Maracujá + Vodka + leite condensado + creme de leite + gelo.</p>
+          </li>
+          <li>
+            Gin Tônica
+            <p class="text-sm">Gin + agua tônica + limão siciliano + especiarias + gelo.</p>
+          </li>
+          <li>
+            Pink Lemonade
+            <p class="text-sm">Vodka + suco de limão + licor de grenadine + soda limonada + gelo.</p>
+          </li>
+        </ul>
+        <p class="text-sm mt-6 text-slate-600"> Vodka Smirnoff + Gin Seagers.</p>
+      </div>
+
+      <div class="border border-green-700 rounded  w-full sm:w-[300px] p-3 sm:p-6">
+        <p>
+        <div class="text-center neonText">Pacote Diamond</div>
+        <div class="text-center ml-2 text-sm text-slate-600">4 horas de evento</div>
+        </p>
+        <ul class="list-image-checked pl-2 pt-6 marker:text-2xl ">
+          <li>
+            Aperol Spritz
+            <p class="text-sm">Aperol + espumante + laranja bahia + agua com gás + gelo.</p>
+          </li>
+          <li>
+            Caipiroska
+            <p class="text-sm">Abacaxi ou Maracujá ou Limão + Vodka + hortelã + açucar + gelo.<p>
+          </li>
+          <li>
+            Moscow Mule
+            <p class="text-sm">Vodka + suco de limão + açúcar + xarope de gengibre + espuma de gengibre + gelo.<p>
+          </li>
+          <li>
+            Pitbull Maltino (exclusivo)
+            <p class="text-sm">Rum + leite condensado + creme de leite + ovo maltino + gelo.</p>
+          </li>
+          <li>
+            Seduction
+            <p class="text-sm">Gin + tonica + flor de hibisco + morango + chá de frutas vermelhas + gelo.</p>
+          </li>
+        </ul>
+        <p class="text-sm mt-6 text-slate-600"> Vodka Smirnoff + Gin Seagers.</p>
+      </div>
+
+      </div>
+  </main>
+
 
   <script src="script.js"></script>
 </body>
